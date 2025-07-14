@@ -1,80 +1,29 @@
-// 퀴즈 문제 데이터 (예상 문제.txt 기반 예시)
 const quizData = [
     {
-        question: '다음 중 HTML의 기본 구조에 포함되지 않는 것은?',
-        choices: ['<head>', '<body>', '<footer>', '<style>'],
-        answer: 3
-    },
-    {
-        question: 'CSS에서 글자색을 지정하는 속성은?',
-        choices: ['background', 'color', 'font-size', 'border'],
-        answer: 1
-    },
-    {
-        question: '자바스크립트에서 변수 선언 키워드가 아닌 것은?',
-        choices: ['var', 'let', 'const', 'int'],
-        answer: 3
-    },
-    {
-        question: '이미지 파일을 웹페이지에 삽입할 때 사용하는 태그는?',
-        choices: ['<img>', '<image>', '<src>', '<pic>'],
-        answer: 0
-    },
-    {
-        question: 'CSS에서 배경색을 지정하는 속성은?',
-        choices: ['color', 'background', 'border', 'margin'],
-        answer: 1
-    },
-    {
-        question: 'HTML에서 링크를 만드는 태그는?',
-        choices: ['<a>', '<link>', '<href>', '<url>'],
-        answer: 0
-    },
-    {
-        question: '자바스크립트에서 함수를 선언할 때 사용하는 키워드는?',
-        choices: ['function', 'def', 'method', 'func'],
-        answer: 0
-    },
-    {
-        question: 'HTML에서 목록을 만들 때 사용하는 태그는?',
-        choices: ['<ul>', '<li>', '<ol>', '<list>'],
-        answer: 0
-    },
-    {
-        question: 'CSS에서 테두리를 지정하는 속성은?',
-        choices: ['border', 'outline', 'frame', 'box'],
-        answer: 0
-    },
-    {
-        question: '자바스크립트에서 배열의 길이를 구하는 속성은?',
-        choices: ['size', 'length', 'count', 'total'],
-        answer: 1
-    },
-    // 예시 문제.txt 기반 연습문제 추가
-    {
-        question: 'HTML에서 텍스트를 굵게 표시하는 태그는?',
-        choices: ['<b>', '<strong>', '<bold>', '<em>'],
-        answer: 0
-    },
-    {
-        question: 'CSS에서 요소의 바깥 여백을 지정하는 속성은?',
-        choices: ['margin', 'padding', 'border', 'outline'],
-        answer: 0
-    },
-    {
-        question: '자바스크립트에서 조건문을 작성할 때 사용하는 키워드는?',
-        choices: ['if', 'switch', 'for', 'while'],
-        answer: 0
-    },
-    // 국어 음운 연습문제 추가
-    {
-        question: '다음 단어의 뜻을 구별해 주는 요소로 알맞지 않은 것은?',
+        question: '단어에 사용된 음운의 개수가 잘못 연결된 것은?',
         choices: [
-            '곰, 솜 - 자음',
-            '종, 공 - 자음',
-            '돌, 돈 - 모음',
-            '산, 선 - 모음',
-            '밥, 법 - 모음'
+            '누나 - 4개',
+            '까꿍 - 6개',
+            '동생 - 6개',
+            '외삼촌 - 7개',
+            '할머니 - 7개'
+        ],
+        answer: 4,
+        image: 'images/01.png'
+    },
+    {
+        question: '다음 중 국어의 자음에 대한 설명으로 적절하지 않은 것은?',
+        choices: [
+            '자음의 개수는 모두 19개이다.',
+            '모음을 만나야 소리 낼 수 있다.',
+            '공기가 방해를 받으며 나오는 소리이다.',
+            '입안의 공명 현상을 거쳐서 나온다는 특징이 있다.',
+            '말의 뜻을 구별해 주는 소리의 가장 작은 단위에 속한다.'
+        ],
+        answer: 3,
+        image: 'images/02.png'
+    }
+];
         ],
         answer: 2
     },
