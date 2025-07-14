@@ -153,7 +153,8 @@ const quizData = [
             '외삼촌 - 7개',
             '할머니 - 7개'
         ],
-        answer: 4
+        answer: 4,
+        image: 'images/01.png'
     },
     {
         question: '다음 중 국어의 자음에 대한 설명으로 적절하지 않은 것은?',
@@ -164,7 +165,8 @@ const quizData = [
             '입안의 공명 현상을 거쳐서 나온다는 특징이 있다.',
             '말의 뜻을 구별해 주는 소리의 가장 작은 단위에 속한다.'
         ],
-        answer: 3
+        answer: 3,
+        image: 'images/02.png'
     }
 ];
 
@@ -201,7 +203,22 @@ function showQuestion(idx) {
     } else {
         q = quizData[idx];
     }
-    questionEl.textContent = q.question;
+    // 문제 텍스트 표시
+    questionEl.innerHTML = '';
+    // 이미지가 있으면 추가
+    if (q.image) {
+        const img = document.createElement('img');
+        img.src = q.image;
+        img.alt = '문제 그림';
+        img.style.maxWidth = '100%';
+        img.style.display = 'block';
+        img.style.margin = '0 auto 16px auto';
+        questionEl.appendChild(img);
+    }
+    // 문제 텍스트
+    const text = document.createElement('div');
+    text.textContent = q.question;
+    questionEl.appendChild(text);
     choicesEl.innerHTML = '';
     q.choices.forEach((choice, i) => {
         const btn = document.createElement('button');
